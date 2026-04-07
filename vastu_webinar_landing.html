@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vastu Magicks World — Free Webinar</title>
+<meta name="description" content="Transform Your Life with Scientific Vastu & Energy Alignment — Free Webinar by Acharya AN Chauddri">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════════════════════
+     ⚙️  CONFIGURATION — Edit ONLY this block to update page
+     No need to touch any other code below.
+═══════════════════════════════════════════════════════════ -->
+<script>
+const LP = {
+
+  /* ── BRANDING ── */
+  siteName:    "Vastu Magicks World",
+  founderName: "Acharya AN Chauddri",
+  founderImg:  "2.png",   // ← path to Acharya ji's photo (local file)
+  website:     "www.acharyaanchauddri.com",
+  websiteURL:  "https://www.acharyaanchauddri.com",
+
+  /* ── HEADLINE ── */
+  headline:    "Transform Your Life with Scientific Vastu & Energy Alignment",
+  subheading:  "Vastu | Numero Vastu | Astro Vastu | Crystal | Rudraksha",
+  heroTagline: "सिर्फ घर नहीं, आपकी पूरी जिंदगी बदल जाएगी – सही दिशा, सही ऊर्जा के साथ!",
+
+  /* ── WEBINAR DETAILS ── */
+  webinarDate:   "Sunday, 19 April 2026",   // ← change date here
+  webinarTime:   "11:00 AM – 1:00 PM IST",
+  webinarMode:   "Online (Zoom)",
+  webinarBonus:  "Free Energy Remedies Guide (Worth ₹999)",
+  feeOriginal:   "₹999",
+  feeCurrent:    "FREE",
+
+  /* ── COUNTDOWN — set to your webinar datetime ── */
+  countdownTo:  "2026-04-19T11:00:00+05:30",
+
+  /* ── CTA BUTTONS ── */
+  ctaText:      "Join Now — It's FREE",
+  ctaURL:       "https://chat.whatsapp.com/CMQqRFhj9Oe0ErZaV6NFi8?mode=gi_t",   // ← registration / WhatsApp link
+
+  /* ── CONTACT ── */
+  phone1:    "9156713356",
+  phone2:    "9311103311",
+  whatsapp:  "https://chat.whatsapp.com/CMQqRFhj9Oe0ErZaV6NFi8?mode=gi_t",
+  facebook:  "https://www.facebook.com/anil.chouudhary.3",
+  instagram: "https://www.instagram.com/acharya_an_chauddri",
+  youtube:   "https://youtube.com/@anchauddri",
+
+  /* ── TRAINER STATS ── */
+  stats: [
+    { num:"19+",   label:"Years Experience"   },
+    { num:"5000+", label:"Consultations Done"  },
+    { num:"1500+", label:"Students Trained"    },
+    { num:"100%",  label:"Practical Methods"   }
+  ],
+
+  /* ── MODULES (what you will learn) ── */
+  modules: [
+    { icon:"🧭", title:"Vastu Shastra",         desc:"Master directional energy, zone balance & space correction techniques." },
+    { icon:"🔢", title:"Numero Vastu",           desc:"Align your numbers with your home & life for success and prosperity." },
+    { icon:"🪐", title:"Astro Vastu",            desc:"Understand how planetary energies affect your living space." },
+    { icon:"🔧", title:"2D & 3D Remedies",       desc:"Correct Vastu without demolition using powerful modern techniques." },
+    { icon:"📐", title:"Object Placement Science",desc:"Right placement = Right results in wealth, health & growth." },
+    { icon:"🌬️", title:"Swar Vigyan",            desc:"Control your breath & energy flow for success in daily life." },
+    { icon:"💎", title:"Ratan & Dhatu Adhyay",   desc:"Use gemstones & metals to balance and amplify life energies." },
+    { icon:"📿", title:"Rudraksha & Crystals",   desc:"Activate spiritual and material growth with these divine tools." }
+  ],
+
+  /* ── TARGET AUDIENCE ── */
+  audience: [
+    { icon:"🏠", label:"Home Makers",          desc:"घर की शांति और समृद्धि चाहने वाले" },
+    { icon:"📐", label:"Architects",           desc:"Design + Energy Balance सीखना चाहते हैं" },
+    { icon:"🛋️", label:"Interior Designers",   desc:"Practical Vastu integration in interiors" },
+    { icon:"💼", label:"Working Professionals", desc:"Career growth & financial stability" },
+    { icon:"🏢", label:"Business Owners",      desc:"Profit & expansion के लिए energy alignment" }
+  ],
+
+  /* ── WHY CHOOSE ── */
+  whyUs: [
+    { icon:"🚫", title:"No Demolition Vastu",   desc:"Powerful remedies without breaking walls or floors." },
+    { icon:"🎯", title:"100% Practical",         desc:"Real case studies — apply same day, see results fast." },
+    { icon:"♾️", title:"Lifetime Skills",        desc:"Knowledge that serves you and your family forever." },
+    { icon:"💰", title:"Learn & Earn",           desc:"Start your own consultancy and earn ₹25,000+ per month." },
+    { icon:"🔬", title:"Scientific Approach",    desc:"Energy-based, evidence-backed Vastu methodology." },
+    { icon:"🤝", title:"Personal Guidance",      desc:"Direct support from Acharya ji and the expert team." }
+  ],
+
+  /* ── TESTIMONIALS ── */
+  testimonials: [
+    { name:"Rajesh Kumar",  city:"Nagpur",    stars:5, img:"3.png", quote:"My business improved in just 30 days after implementing the Vastu corrections. Unbelievable results!" },
+    { name:"Priya Sharma",  city:"Pune",      stars:5, img:"6.png", quote:"घर में शांति और पैसा दोनों बढ़ा। Acharya ji की guidance बहुत practical और असरदार है।" },
+    { name:"Sunita Rao",    city:"Hyderabad", stars:5, img:"4.png", quote:"Best Vastu training I have ever attended. Changed my complete perspective on space and energy." },
+    { name:"Amit Mishra",   city:"Mumbai",    stars:5, img:"8.png", quote:"After this course I started my consultancy. Now earning well while helping others transform their lives." },
+    { name:"Neha Verma",    city:"Indore",    stars:5, img:"7.png", quote:"Within weeks of applying the remedies, our home felt calmer and my focus at work improved a lot." },
+    { name:"Sandeep Patil", city:"Nashik",    stars:5, img:"10.png", quote:"Simple guidance, powerful impact. I saw positive changes in business flow and family harmony." }
+  ]
+};
+</script>
+<!-- ═══════════════════ End Configuration ═══════════════════ -->
+
+<style>
+:root{
+  --gold:#B8760A; --gold2:#D4920E; --saffron:#C8620A;
+  --dark:#1C1508; --bg:#FFFDF7; --bg2:#FFF8EC; --bg3:#FFF0D0;
+  --text:#1C1508; --muted:#6B5A3E; --border:rgba(184,118,10,.2);
+  --shadow:rgba(100,70,10,.12); --white:#fff; --red:#C0392B;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Raleway',sans-serif;font-weight:400;overflow-x:hidden;}
+
+/* NAV */
+.lp-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,253,247,.97);border-bottom:1px solid var(--border);padding:.8rem 3rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 20px var(--shadow);}
+.lp-nav-brand{font-family:'Cinzel',serif;font-size:.9rem;font-weight:700;color:var(--gold);letter-spacing:.06em;}
+.btn-red{background:var(--red);color:#fff;padding:.9rem 2.4rem;font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;display:inline-block;font-weight:700;transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;}
+.btn-red:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(192,57,43,.4);}
+.btn-outline-gold{background:transparent;color:var(--gold);border:2px solid var(--gold);padding:.9rem 2rem;font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;display:inline-block;font-weight:700;transition:background .3s,color .3s;}
+.btn-outline-gold:hover{background:var(--gold);color:#fff;}
+.btn-sm{padding:.55rem 1.4rem!important;font-size:.62rem!important;}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;gap:4rem;background:linear-gradient(135deg,#FFFDF7 0%,#FFF8EC 40%,#FFF0D0 100%);padding:8rem 4rem 5rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:-100px;top:50%;transform:translateY(-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(184,118,10,.06) 0%,transparent 70%);pointer-events:none;}
+.hero-vastu-bg{position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Ccircle cx='400' cy='400' r='350' fill='none' stroke='%23B8760A' stroke-width='0.6' stroke-opacity='.08'/%3E%3Ccircle cx='400' cy='400' r='280' fill='none' stroke='%23B8760A' stroke-width='0.6' stroke-opacity='.07'/%3E%3Ccircle cx='400' cy='400' r='200' fill='none' stroke='%23B8760A' stroke-width='0.8' stroke-opacity='.09'/%3E%3Ccircle cx='400' cy='400' r='120' fill='none' stroke='%23B8760A' stroke-width='0.8' stroke-opacity='.1'/%3E%3Cline x1='50' y1='400' x2='750' y2='400' stroke='%23B8760A' stroke-width='0.4' stroke-opacity='.06'/%3E%3Cline x1='400' y1='50' x2='400' y2='750' stroke='%23B8760A' stroke-width='0.4' stroke-opacity='.06'/%3E%3Cline x1='155' y1='155' x2='645' y2='645' stroke='%23B8760A' stroke-width='0.4' stroke-opacity='.05'/%3E%3Cline x1='645' y1='155' x2='155' y2='645' stroke='%23B8760A' stroke-width='0.4' stroke-opacity='.05'/%3E%3Cpolygon points='400,80 680,560 120,560' fill='none' stroke='%23B8760A' stroke-width='0.5' stroke-opacity='.07'/%3E%3Cpolygon points='400,720 120,240 680,240' fill='none' stroke='%23B8760A' stroke-width='0.5' stroke-opacity='.07'/%3E%3C/svg%3E") right center/700px no-repeat;pointer-events:none;}
+.hero-left{flex:1.3;max-width:660px;position:relative;z-index:1;}
+.hero-right{flex:1;display:flex;justify-content:flex-end;align-items:center;position:relative;z-index:1;}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(184,118,10,.1);border:1px solid var(--border);padding:.4rem 1.1rem;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1.5rem;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.6rem);font-weight:400;line-height:1.15;color:var(--dark);margin-bottom:1rem;}
+.hero h1 .hl{color:var(--gold);font-style:italic;}
+.hero-sub{font-size:.78rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:1.8rem;font-weight:600;}
+.hero-tagline{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--muted);line-height:1.7;margin-bottom:2rem;padding-left:1rem;border-left:3px solid var(--gold);}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;}
+.wi-strip{display:flex;gap:1.8rem;flex-wrap:wrap;}
+.wi-item{display:flex;align-items:center;gap:.5rem;font-size:.74rem;color:var(--muted);font-weight:500;}
+
+/* ACHARYA CARD */
+.ac-card{background:var(--white);border:2px solid var(--border);box-shadow:0 20px 60px var(--shadow);max-width:360px;width:100%;position:relative;}
+.ac-card-img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;display:block;background:var(--bg3);}
+.ac-card-info{padding:1.4rem 1.5rem;background:linear-gradient(135deg,var(--bg3),var(--bg2));}
+.ac-card-name{font-family:'Cinzel',serif;font-size:.95rem;font-weight:700;color:var(--gold);}
+.ac-card-role{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.2rem;}
+.verified{display:inline-flex;align-items:center;gap:.4rem;background:rgba(184,118,10,.1);border:1px solid var(--border);padding:.28rem .8rem;font-size:.58rem;letter-spacing:.1em;color:var(--gold);font-weight:700;margin-top:.7rem;}
+.free-ribbon{position:absolute;top:0;right:0;background:linear-gradient(135deg,var(--red),#E74C3C);color:#fff;padding:.8rem 1rem;text-align:center;}
+.fr-was{font-size:.55rem;letter-spacing:.12em;text-decoration:line-through;opacity:.75;display:block;}
+.fr-now{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;line-height:1;display:block;}
+.fr-label{font-size:.5rem;letter-spacing:.18em;display:block;}
+
+/* COUNTDOWN */
+.countdown-bar{background:linear-gradient(135deg,var(--dark),#2C1A08);padding:2.5rem 3rem;text-align:center;}
+.cd-label{font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:700;}
+.cd-timer{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;align-items:flex-start;}
+.cd-unit{text-align:center;}
+.cd-num{font-family:'Cormorant Garamond',serif;font-size:3.8rem;font-weight:300;color:#fff;line-height:1;display:block;min-width:72px;}
+.cd-ul{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+.cd-colon{font-family:'Cormorant Garamond',serif;font-size:3rem;color:var(--gold);line-height:1;padding-top:.3rem;font-weight:300;}
+.cd-cta{margin-top:1.8rem;}
+
+/* SECTION UTILS */
+section{padding:6rem 3rem;}
+.si{max-width:1200px;margin:0 auto;}
+.sec-tag{font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.6rem;display:block;}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:.8rem;}
+.sec-title em{font-style:italic;color:var(--gold);}
+.sec-sub{font-size:.82rem;color:var(--muted);line-height:1.7;max-width:600px;}
+.sh{margin-bottom:3.5rem;}
+.tc{text-align:center;}.tc .sec-sub{margin:0 auto;}
+
+/* AUDIENCE */
+.sec-audience{background:var(--bg2);}
+.aud-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin-bottom:3rem;}
+.aud-card{background:var(--white);border:1.5px solid var(--border);padding:2rem 1.5rem;text-align:center;transition:transform .3s,border-color .3s,box-shadow .3s;}
+.aud-card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 10px 28px var(--shadow);}
+.aud-ic{font-size:2.5rem;margin-bottom:.9rem;display:block;}
+.aud-lbl{font-family:'Cinzel',serif;font-size:.76rem;letter-spacing:.06em;color:var(--dark);margin-bottom:.35rem;}
+.aud-desc{font-size:.68rem;color:var(--muted);line-height:1.6;}
+
+/* MODULES */
+.sec-modules{background:var(--bg);}
+.mod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;}
+.mod-card{background:var(--white);border:1.5px solid var(--border);padding:2rem 1.8rem;position:relative;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;}
+.mod-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--saffron));transform:scaleX(0);transition:transform .35s;}
+.mod-card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 10px 28px var(--shadow);}
+.mod-card:hover::after{transform:scaleX(1);}
+.mod-bg-num{position:absolute;top:.5rem;right:1rem;font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(184,118,10,.07);line-height:1;pointer-events:none;}
+.mod-ic{font-size:2.2rem;margin-bottom:.9rem;display:block;}
+.mod-ttl{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.07em;color:var(--dark);margin-bottom:.5rem;}
+.mod-desc{font-size:.71rem;color:var(--muted);line-height:1.65;}
+
+/* TRAINER */
+.sec-trainer{background:linear-gradient(135deg,var(--bg3) 0%,var(--bg2) 100%);}
+.trainer-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:6rem;align-items:center;}
+.trainer-photo-wrap{position:relative;}
+.trainer-photo{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border:2px solid var(--border);display:block;box-shadow:0 24px 60px var(--shadow);}
+.trainer-float{position:absolute;bottom:-1.5rem;right:-1.5rem;background:linear-gradient(135deg,var(--gold),var(--saffron));color:#fff;padding:1.2rem 1.6rem;text-align:center;box-shadow:0 8px 25px rgba(184,118,10,.4);}
+.trainer-float .n{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;line-height:1;}
+.trainer-float .l{font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;opacity:.9;}
+.t-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:2rem 0;}
+.t-stat{background:var(--white);border:1px solid var(--border);padding:1.2rem;text-align:center;}
+.t-stat .n{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;}
+.t-stat .l{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:.2rem;}
+.highlight-box{background:var(--dark);color:#fff;padding:1.8rem;border-left:4px solid var(--gold);margin-top:1.5rem;}
+.highlight-box p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;line-height:1.65;}
+.highlight-box .hl{color:var(--gold);}
+.t-points{list-style:none;display:flex;flex-direction:column;gap:.65rem;margin:1.5rem 0;}
+.t-points li{display:flex;align-items:flex-start;gap:.8rem;font-size:.8rem;color:var(--muted);}
+.t-points li::before{content:'✔';color:var(--gold);font-weight:700;flex-shrink:0;margin-top:.05rem;}
+
+/* WHY */
+.sec-why{background:var(--bg);}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.why-card{background:var(--white);border:1.5px solid var(--border);padding:2rem;display:flex;gap:1.2rem;align-items:flex-start;transition:border-color .3s,box-shadow .3s;}
+.why-card:hover{border-color:var(--gold);box-shadow:0 6px 20px var(--shadow);}
+.why-ic{font-size:2rem;flex-shrink:0;line-height:1;}
+.why-card h4{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.07em;color:var(--dark);margin-bottom:.35rem;}
+.why-card p{font-size:.71rem;color:var(--muted);line-height:1.65;}
+
+/* DETAILS */
+.sec-details{background:var(--dark);}
+.details-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:5rem;align-items:center;}
+.detail-list{list-style:none;display:flex;flex-direction:column;gap:1.2rem;}
+.detail-list li{display:flex;align-items:center;gap:1rem;font-size:.83rem;color:rgba(255,255,255,.75);}
+.d-ic{font-size:1.3rem;width:42px;height:42px;background:rgba(184,118,10,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(184,118,10,.25);}
+.detail-list li strong{color:#fff;}
+.bonus-box{background:rgba(184,118,10,.1);border:1px solid rgba(184,118,10,.25);padding:1.8rem;margin-top:2rem;}
+.bonus-box .bt{font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.5rem;display:block;}
+.bonus-box .bn{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#fff;margin-bottom:.3rem;}
+.bonus-box .bs{font-size:.72rem;color:rgba(255,255,255,.5);}
+.price-block{text-align:center;}
+.p-was{font-size:.78rem;color:rgba(255,255,255,.35);text-decoration:line-through;margin-bottom:.4rem;}
+.p-now{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:1.5rem;}
+.p-now small{font-size:.75rem;color:rgba(255,255,255,.4);letter-spacing:.18em;text-transform:uppercase;display:block;font-family:'Raleway',sans-serif;margin-top:.3rem;}
+.seats-warn{font-size:.72rem;color:rgba(255,255,255,.4);margin-top:1rem;letter-spacing:.08em;}
+.seats-warn strong{color:#E74C3C;}
+.contact-mini{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(184,118,10,.15);}
+.contact-mini .cl{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.6rem;}
+.contact-mini a{color:var(--gold);font-family:'Cinzel',serif;font-size:.95rem;font-weight:700;text-decoration:none;display:block;margin-bottom:.4rem;}
+.contact-mini .wa-link{color:rgba(255,255,255,.4);font-size:.72rem;text-decoration:none;}
+
+/* TESTIMONIALS */
+.sec-testi{background:var(--bg2);}
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
+.testi-card{background:var(--white);border:1.5px solid var(--border);padding:2.2rem;position:relative;}
+.testi-card::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:7rem;color:rgba(184,118,10,.07);position:absolute;top:-.8rem;left:1rem;line-height:1;}
+.testi-stars{color:var(--gold);font-size:.88rem;letter-spacing:.1em;margin-bottom:1rem;}
+.testi-quote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--text);line-height:1.7;margin-bottom:1.5rem;}
+.testi-author{display:flex;align-items:center;gap:1rem;}
+.testi-av{width:44px;height:44px;border-radius:50%;overflow:hidden;border:2px solid var(--border);flex-shrink:0;background:var(--bg3);}
+.testi-av img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.testi-name{font-family:'Cinzel',serif;font-size:.73rem;letter-spacing:.05em;color:var(--dark);}
+.testi-city{font-size:.6rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:.2rem;}
+
+/* URGENCY */
+.sec-urgency{background:linear-gradient(135deg,var(--dark) 0%,#2C1A05 100%);padding:7rem 3rem;text-align:center;position:relative;overflow:hidden;}
+.sec-urgency::before{content:'ॐ';font-size:35rem;color:rgba(184,118,10,.03);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;line-height:1;}
+.u-inner{position:relative;z-index:1;}
+.u-tag{display:inline-block;background:var(--red);color:#fff;padding:.4rem 1.2rem;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:1.5rem;}
+.u-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:300;color:#fff;margin-bottom:.8rem;}
+.u-title em{color:var(--gold);font-style:italic;}
+.u-sub{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:rgba(255,255,255,.55);max-width:560px;margin:0 auto 2.5rem;line-height:1.7;}
+.u-points{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+.u-pt{display:flex;align-items:center;gap:.6rem;font-size:.76rem;color:rgba(255,255,255,.65);}
+.u-pt::before{content:'✦';color:var(--gold);}
+.u-note{font-size:.68rem;color:rgba(255,255,255,.3);margin-top:1.2rem;letter-spacing:.1em;}
+
+/* FOOTER */
+.lp-footer{background:var(--dark);border-top:1px solid rgba(184,118,10,.15);padding:2.2rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;}
+.ft-brand{font-family:'Cinzel',serif;font-size:.85rem;color:var(--gold);letter-spacing:.1em;font-weight:700;}
+.ft-copy{font-size:.58rem;color:rgba(255,255,255,.3);margin-top:.3rem;}
+.ft-social{display:flex;gap:1.2rem;}
+.ft-social a{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);text-decoration:none;transition:color .3s;}
+.ft-social a:hover{color:var(--gold);}
+.ft-links{display:flex;flex-direction:column;gap:.3rem;text-align:right;}
+.ft-links a{font-size:.62rem;color:rgba(255,255,255,.35);text-decoration:none;transition:color .3s;}
+.ft-links a:hover{color:var(--gold);}
+
+/* FLOATING CTA */
+.float-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--red);padding:.9rem;text-align:center;box-shadow:0 -4px 20px rgba(0,0,0,.25);}
+.float-cta a{color:#fff;font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;font-weight:700;}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.vis{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.mod-grid{grid-template-columns:repeat(2,1fr);}.why-grid{grid-template-columns:repeat(2,1fr);}.aud-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:768px){
+  .lp-nav{padding:.7rem 1.2rem;}
+  .hero{flex-direction:column;padding:7rem 1.5rem 4rem;gap:2.5rem;}
+  .hero-right{width:100%;}
+  .ac-card{max-width:100%;}
+  section{padding:4.5rem 1.5rem;}
+  .aud-grid{grid-template-columns:1fr 1fr;}
+  .mod-grid{grid-template-columns:1fr 1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .trainer-grid{grid-template-columns:1fr;gap:3rem;}
+  .trainer-float{position:static;margin-top:1rem;display:inline-block;}
+  .details-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .countdown-bar{padding:2rem 1.5rem;}
+  .cd-num{font-size:3rem;}
+  .lp-footer{flex-direction:column;text-align:center;}
+  .ft-links{text-align:center;}
+  .float-cta{display:block;}
+  body{padding-bottom:56px;}
+  .t-stats{grid-template-columns:repeat(4,1fr);}
+  .hero h1{font-size:2.2rem;}
+}
+@media(max-width:480px){.aud-grid{grid-template-columns:1fr;}.mod-grid{grid-template-columns:1fr;}.t-stats{grid-template-columns:1fr 1fr;}.hero-btns{flex-direction:column;}.u-points{gap:1rem;}}
+</style>
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<nav class="lp-nav">
+  <div class="lp-nav-brand" id="nav-brand"></div>
+  <a id="nav-cta" href="#" class="btn-red btn-sm">Join Now — FREE</a>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<section class="hero" id="top">
+  <div class="hero-vastu-bg"></div>
+  <div class="hero-left">
+    <div class="hero-badge">🌟 Free Webinar — Limited Seats Available</div>
+    <h1 id="hero-h1"></h1>
+    <p class="hero-sub" id="hero-sub"></p>
+    <p class="hero-tagline" id="hero-tagline"></p>
+    <div class="hero-btns">
+      <a id="hero-btn1" href="#" class="btn-red" style="font-size:.75rem;padding:1.1rem 2.8rem;"></a>
+      <a href="#details" class="btn-outline-gold">See Webinar Details →</a>
+    </div>
+    <div class="wi-strip" id="wi-strip"></div>
+  </div>
+  <div class="hero-right">
+    <div class="ac-card">
+      <img class="ac-card-img" id="ac-img" src="" alt="Acharya AN Chauddri">
+      <div class="free-ribbon">
+        <span class="fr-was" id="fr-was"></span>
+        <span class="fr-now" id="fr-now"></span>
+        <span class="fr-label">Today</span>
+      </div>
+      <div class="ac-card-info">
+        <div class="ac-card-name" id="ac-name"></div>
+        <div class="ac-card-role">Vastu &amp; Energy Science Expert</div>
+        <div class="verified">✔ Verified Master Trainer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ COUNTDOWN ══════ -->
+<div class="countdown-bar">
+  <div class="cd-label">⏳ Webinar Starts In — Reserve Your Seat Before It's Too Late!</div>
+  <div class="cd-timer">
+    <div class="cd-unit"><span class="cd-num" id="cd-d">00</span><div class="cd-ul">Days</div></div>
+    <span class="cd-colon">:</span>
+    <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><div class="cd-ul">Hours</div></div>
+    <span class="cd-colon">:</span>
+    <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><div class="cd-ul">Minutes</div></div>
+    <span class="cd-colon">:</span>
+    <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><div class="cd-ul">Seconds</div></div>
+  </div>
+  <div class="cd-cta"><a id="cd-btn" href="#" class="btn-red" style="font-size:.72rem;padding:1rem 2.5rem;">Reserve Your Free Seat →</a></div>
+</div>
+
+<!-- ══════ AUDIENCE ══════ -->
+<section class="sec-audience">
+  <div class="si">
+    <div class="sh tc reveal">
+      <span class="sec-tag">🎯 Is This Webinar For You?</span>
+      <h2 class="sec-title">अगर आप इनमें से एक हैं — <em>यह Webinar आपके लिए है</em></h2>
+      <p class="sec-sub">Whether you're a homemaker seeking harmony or a professional seeking growth — this webinar will transform your understanding of space and energy.</p>
+    </div>
+    <div class="aud-grid" id="aud-grid"></div>
+    <div class="tc reveal" style="margin-top:2.5rem;">
+      <a id="aud-cta" href="#" class="btn-red">👉 Enroll Now — It's FREE</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ MODULES ══════ -->
+<section class="sec-modules">
+  <div class="si">
+    <div class="sh tc reveal">
+      <span class="sec-tag">📚 Course Curriculum</span>
+      <h2 class="sec-title">What You Will <em>Learn</em></h2>
+      <p class="sec-sub">8 powerful modules covering the complete science of Vastu, energy alignment &amp; ancient remedies — all in one free session.</p>
+    </div>
+    <div class="mod-grid" id="mod-grid"></div>
+  </div>
+</section>
+
+<!-- ══════ TRAINER ══════ -->
+<section class="sec-trainer">
+  <div class="si">
+    <div class="trainer-grid">
+      <div class="trainer-photo-wrap reveal">
+        <img id="trainer-img" src="" alt="Acharya AN Chauddri" class="trainer-photo">
+        <div class="trainer-float">
+          <div class="n">19<sup style="font-size:1rem;">+</sup></div>
+          <div class="l">Years of Mastery</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:.15s;">
+        <span class="sec-tag">👤 About Trainer</span>
+        <h2 class="sec-title">Learn from <em id="trainer-name"></em></h2>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--muted);line-height:1.8;margin-top:1rem;margin-bottom:1.5rem;">हम आपको सिर्फ knowledge नहीं देते, बल्कि आपको self-dependent बनाते हैं — ताकि आप अपनी problems खुद solve कर सकें और दूसरों की भी मदद कर सकें।</p>
+        <div class="t-stats" id="t-stats"></div>
+        <ul class="t-points">
+          <li>Scientific + Practical Vastu Approach</li>
+          <li>No Demolition Remedies — बिना तोड़-फोड़ के समाधान</li>
+          <li>Real Case Studies Based Learning</li>
+          <li>Personal Guidance &amp; Ongoing Support</li>
+          <li>Learn &amp; Earn Opportunity — अपना career शुरू करें</li>
+        </ul>
+        <div class="highlight-box">
+          <p>"Learn to <span class="hl">solve your own problems</span> &amp; earn from it — with the same knowledge that has transformed <span class="hl">5000+ lives</span>."</p>
+        </div>
+        <div style="margin-top:2rem;"><a id="trainer-cta" href="#" class="btn-red">Join the Free Webinar →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ WHY US ══════ -->
+<section class="sec-why">
+  <div class="si">
+    <div class="sh tc reveal">
+      <span class="sec-tag">⭐ Why Choose Us</span>
+      <h2 class="sec-title">Why Acharya AN Chauddri's <em>Webinar?</em></h2>
+    </div>
+    <div class="why-grid" id="why-grid"></div>
+  </div>
+</section>
+
+<!-- ══════ DETAILS ══════ -->
+<section class="sec-details" id="details">
+  <div class="si">
+    <div class="details-grid">
+      <div class="reveal">
+        <span class="sec-tag" style="color:var(--gold);">🎥 Webinar Details</span>
+        <h2 class="sec-title" style="color:#fff;">Everything You Need <em>to Know</em></h2>
+        <ul class="detail-list" id="detail-list" style="margin-top:2rem;"></ul>
+        <div class="bonus-box">
+          <span class="bt">🎁 Free Bonus</span>
+          <div class="bn" id="bonus-title"></div>
+          <div class="bs">Exclusively for registered participants</div>
+        </div>
+      </div>
+      <div class="price-block reveal" style="transition-delay:.1s;">
+        <div class="p-was" id="p-was"></div>
+        <div class="p-now" id="p-now"></div>
+        <a id="detail-btn" href="#" class="btn-red" style="font-size:.75rem;padding:1.2rem 3rem;"></a>
+        <p class="seats-warn">🚨 <strong>Limited Seats Only</strong> — Register now before they fill up!</p>
+        <div class="contact-mini">
+          <div class="cl">Questions? Reach Us</div>
+          <a id="detail-phone" href="#"></a>
+          <a id="detail-wa" href="#" target="_blank" class="wa-link">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ TESTIMONIALS ══════ -->
+<section class="sec-testi">
+  <div class="si">
+    <div class="sh tc reveal">
+      <span class="sec-tag">💬 Student Success Stories</span>
+      <h2 class="sec-title">What Our Students <em>Say</em></h2>
+    </div>
+    <div class="testi-grid" id="testi-grid"></div>
+  </div>
+</section>
+
+<!-- ══════ URGENCY CTA ══════ -->
+<section class="sec-urgency">
+  <div class="u-inner">
+    <div class="u-tag">🚨 Limited Seats — Don't Miss Out!</div>
+    <h2 class="u-title">One Webinar Can <em>Change Everything</em></h2>
+    <p class="u-sub">"सिर्फ घर नहीं, आपकी पूरी जिंदगी बदल जाएगी – सही दिशा, सही ऊर्जा के साथ!"</p>
+    <div class="u-points">
+      <div class="u-pt">100% Free to Attend</div>
+      <div class="u-pt">Practical Techniques</div>
+      <div class="u-pt">Free Bonus Guide ₹999</div>
+      <div class="u-pt">Certificate Included</div>
+    </div>
+    <a id="urgency-btn" href="#" class="btn-red" style="font-size:.8rem;padding:1.3rem 4rem;"></a>
+    <p class="u-note">Register • Join on Zoom • Transform Your Life</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="lp-footer">
+  <div>
+    <div class="ft-brand" id="ft-brand"></div>
+    <div class="ft-copy" id="ft-copy"></div>
+  </div>
+  <div class="ft-social" id="ft-social"></div>
+  <div class="ft-links" id="ft-links"></div>
+</footer>
+
+<!-- Floating mobile CTA -->
+<div class="float-cta">
+  <a id="float-btn" href="#">🔥 Join Free Webinar — Reserve Seat Now</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const C = LP;
+
+  // NAV
+  document.getElementById('nav-brand').textContent = C.siteName;
+  document.getElementById('nav-cta').href = C.ctaURL;
+
+  // HERO
+  document.getElementById('hero-h1').innerHTML = C.headline
+    .replace('Transform', '<span class="hl">Transform</span>')
+    .replace('Vastu', '<span class="hl">Vastu</span>')
+    .replace('Energy', '<span class="hl">Energy</span>');
+  document.getElementById('hero-sub').textContent = C.subheading;
+  document.getElementById('hero-tagline').textContent = C.heroTagline;
+  const hb = document.getElementById('hero-btn1');
+  hb.textContent = C.ctaText; hb.href = C.ctaURL;
+  document.getElementById('ac-img').src = C.founderImg;
+  document.getElementById('fr-was').textContent = C.feeOriginal;
+  document.getElementById('fr-now').textContent = C.feeCurrent;
+  document.getElementById('ac-name').textContent = C.founderName;
+  document.getElementById('wi-strip').innerHTML = [
+    {icon:'📅',txt:C.webinarDate},{icon:'⏰',txt:C.webinarTime},{icon:'📍',txt:C.webinarMode}
+  ].map(i=>`<div class="wi-item">${i.icon} ${i.txt}</div>`).join('');
+
+  // COUNTDOWN
+  runCountdown(C.countdownTo);
+  document.getElementById('cd-btn').href = C.ctaURL;
+
+  // AUDIENCE
+  document.getElementById('aud-grid').innerHTML = C.audience.map((a,i)=>
+    `<div class="aud-card reveal" style="transition-delay:${i*.07}s">
+      <span class="aud-ic">${a.icon}</span>
+      <div class="aud-lbl">${a.label}</div>
+      <div class="aud-desc">${a.desc}</div>
+    </div>`).join('');
+  document.getElementById('aud-cta').href = C.ctaURL;
+
+  // MODULES
+  document.getElementById('mod-grid').innerHTML = C.modules.map((m,i)=>
+    `<div class="mod-card reveal" style="transition-delay:${(i%4)*.08}s">
+      <div class="mod-bg-num">0${i+1}</div>
+      <span class="mod-ic">${m.icon}</span>
+      <div class="mod-ttl">${m.title}</div>
+      <div class="mod-desc">${m.desc}</div>
+    </div>`).join('');
+
+  // TRAINER
+  document.getElementById('trainer-img').src = C.founderImg;
+  document.getElementById('trainer-name').textContent = C.founderName;
+  document.getElementById('t-stats').innerHTML = C.stats.map(s=>
+    `<div class="t-stat"><div class="n">${s.num}</div><div class="l">${s.label}</div></div>`).join('');
+  document.getElementById('trainer-cta').href = C.ctaURL;
+
+  // WHY
+  document.getElementById('why-grid').innerHTML = C.whyUs.map((w,i)=>
+    `<div class="why-card reveal" style="transition-delay:${(i%3)*.08}s">
+      <div class="why-ic">${w.icon}</div>
+      <div><h4>${w.title}</h4><p>${w.desc}</p></div>
+    </div>`).join('');
+
+  // DETAILS
+  document.getElementById('detail-list').innerHTML = [
+    {icon:'📅',lbl:'Date',val:C.webinarDate},
+    {icon:'⏰',lbl:'Time',val:C.webinarTime},
+    {icon:'📍',lbl:'Mode',val:C.webinarMode},
+    {icon:'🎁',lbl:'Bonus',val:C.webinarBonus},
+    {icon:'💰',lbl:'Fee',val:`<span style="text-decoration:line-through;opacity:.45;">${C.feeOriginal}</span> &nbsp;<strong style="color:var(--gold);font-size:1.1rem;">${C.feeCurrent}</strong>`}
+  ].map(d=>`<li><div class="d-ic">${d.icon}</div><div><strong>${d.lbl}:</strong> ${d.val}</div></li>`).join('');
+  document.getElementById('bonus-title').textContent = C.webinarBonus;
+  document.getElementById('p-was').textContent = 'Regular Fee: ' + C.feeOriginal;
+  document.getElementById('p-now').innerHTML = `<small>Today's Price</small>${C.feeCurrent}`;
+  const db = document.getElementById('detail-btn'); db.textContent = C.ctaText; db.href = C.ctaURL;
+  const dp = document.getElementById('detail-phone'); dp.textContent = C.phone1; dp.href = 'tel:'+C.phone1;
+  document.getElementById('detail-wa').href = C.whatsapp;
+
+  // TESTIMONIALS
+  document.getElementById('testi-grid').innerHTML = C.testimonials.map((t,i)=>
+    `<div class="testi-card reveal" style="transition-delay:${(i%2)*.1}s">
+      <div class="testi-stars">${'★'.repeat(t.stars)}</div>
+      <p class="testi-quote">"${t.quote}"</p>
+      <div class="testi-author">
+        <div class="testi-av"><img src="${t.img}" alt="${t.name}" onerror="this.style.display='none'"></div>
+        <div><div class="testi-name">${t.name}</div><div class="testi-city">${t.city}</div></div>
+      </div>
+    </div>`).join('');
+
+  // URGENCY
+  const ub = document.getElementById('urgency-btn'); ub.textContent = C.ctaText; ub.href = C.ctaURL;
+
+  // FOOTER
+  document.getElementById('ft-brand').textContent = C.siteName;
+  document.getElementById('ft-copy').textContent = `© 2025 ${C.siteName}. All Rights Reserved. | ${C.website}`;
+  document.getElementById('ft-social').innerHTML =
+    `<a href="${C.facebook}" target="_blank">Facebook</a>
+     <a href="${C.instagram}" target="_blank">Instagram</a>
+     <a href="${C.youtube}" target="_blank">YouTube</a>`;
+  document.getElementById('ft-links').innerHTML =
+    `<a href="${C.websiteURL}" target="_blank">${C.website}</a>
+     <a href="tel:${C.phone1}">${C.phone1}</a>
+     <a href="${C.whatsapp}" target="_blank">WhatsApp</a>`;
+
+  // FLOATING CTA
+  document.getElementById('float-btn').href = C.ctaURL;
+
+  // REVEAL
+  const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); }), {threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+});
+
+function runCountdown(iso) {
+  const label = document.querySelector('.cd-label');
+  const elD = document.getElementById('cd-d');
+  const elH = document.getElementById('cd-h');
+  const elM = document.getElementById('cd-m');
+  const elS = document.getElementById('cd-s');
+
+  const target = new Date(iso);
+  if (isNaN(target)) {
+    console.error('Invalid countdown target:', iso);
+    if (label) label.textContent = 'Countdown date is invalid — please update configuration.';
+    elD.textContent = elH.textContent = elM.textContent = elS.textContent = '--';
+    return;
+  }
+
+  function tick() {
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      // Event has started (or date is past)
+      elD.textContent = elH.textContent = elM.textContent = elS.textContent = '00';
+      if (label) label.textContent = 'The webinar has started or the date has passed.';
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    elD.textContent = String(d).padStart(2, '0');
+    elH.textContent = String(h).padStart(2, '0');
+    elM.textContent = String(m).padStart(2, '0');
+    elS.textContent = String(s).padStart(2, '0');
+    setTimeout(tick, 1000);
+  }
+
+  tick();
+}
+</script>
+</body>
+</html>
