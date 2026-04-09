@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Vastu Magicks World — Free Webinar</title>
-<meta name="description" content="Transform Your Life with Scientific Vastu & Energy Alignment — Free Webinar by Acharya AN Chauddri">
+<title>Acharya AN Chauddri — ₹9 Webinar</title>
+<meta name="description" content="Transform Your Life with Scientific Vastu & Energy Alignment — ₹9 Webinar by Acharya AN Chauddri">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- ═══════════════════════════════════════════════════════════
@@ -15,7 +15,8 @@
 const LP = {
 
   /* ── BRANDING ── */
-  siteName:    "Vastu Magicks World",
+  siteName:    "Acharya AN Chauddri",
+  logoImg:     "logo.png",
   founderName: "Acharya AN Chauddri",
   founderImg:  "2.png",   // ← path to Acharya ji's photo (local file)
   website:     "www.acharyaanchauddri.com",
@@ -30,16 +31,16 @@ const LP = {
   webinarDate:   "Friday, 1 May 2026",   // ← change date here
   webinarTime:   "9:00 PM – 11:00 PM IST",
   webinarMode:   "Online (Zoom)",
-  webinarBonus:  "Free Energy Remedies Guide (Worth ₹999)",
+  webinarBonus:  "Energy Remedies Guide (Included, Worth ₹999)",
   feeOriginal:   "₹999",
-  feeCurrent:    "FREE",
+  feeCurrent:    "₹9",
 
   /* ── COUNTDOWN — set to your webinar datetime ── */
   countdownTo:  "2026-05-01T21:00:00+05:30",
 
   /* ── CTA BUTTONS ── */
-  ctaText:      "Join Now — It's FREE",
-  ctaURL:       "https://chat.whatsapp.com/CMQqRFhj9Oe0ErZaV6NFi8?mode=gi_t",   // ← registration / WhatsApp link
+  ctaText:      "Pay ₹9 & Join Webinar",
+  ctaURL:       "https://rzp.io/rzp/xeRRlgrb",   // ← registration payment link
 
   /* ── CONTACT ── */
   phone1:    "9156713356",
@@ -90,12 +91,11 @@ const LP = {
 
   /* ── TESTIMONIALS ── */
   testimonials: [
-    { name:"Rajesh Kumar",  city:"Nagpur",    stars:5, img:"3.png", quote:"My business improved in just 30 days after implementing the Vastu corrections. Unbelievable results!" },
-    { name:"Priya Sharma",  city:"Pune",      stars:5, img:"6.png", quote:"घर में शांति और पैसा दोनों बढ़ा। Acharya ji की guidance बहुत practical और असरदार है।" },
-    { name:"Sunita Rao",    city:"Hyderabad", stars:5, img:"4.png", quote:"Best Vastu training I have ever attended. Changed my complete perspective on space and energy." },
+    { name:"KANUSHIKA",  city:"FROM HISAR, HARYANA",    stars:5, img:"3.png", quote:"I am currently learning Vastu from Acharya A.N. Chauddhri online, and I am thoroughly impressed with his teaching methods. He explains concepts in great detail through well- structured presentations, making complex ideas easy to understand. Acharya Chauddhri uses real-life client examples to clarify concepts, which greatly enhances the learning experience. He actively engages everyone in conversations and keeps the spirits high with his sense of humor. I highly recommend his classes to anyone interested in learning Vastu." },
+    { name:"ISHWAR VEDANT",  city:"FROM HYDERABAD",      stars:5, img:"6.png", quote:"Finding a true Guru in life brings light to a life full of darkness. I have been taking classes under Acharya Ji since last 4 days, Sir has given very good and detailed knowledge to all of us, these days no one gives such good education for free. We all are very grateful to Sir. I don't even dare to rise above Sir's class. Sir understands one thing very well. Really sir, your living tariff is less burdensome. Thank you very much Guruji. Jai ho Shyam Baba" },
+    { name:"RAJAN GUPTA",    city:"FROM FARIDABAD (HARYANA)", stars:5, img:"4.png", quote:"Thanks SIR l for teaching us in an environment full of fun and joy.Class atmosphere is quiet as soothing as your teaching is too SARAL AND PRACTICAL Thanks GURUJI for sharing your knowledge, thoughts and experience with us. SIR JI is a encyclopedia of VASTU" },
     { name:"Amit Mishra",   city:"Mumbai",    stars:5, img:"8.png", quote:"After this course I started my consultancy. Now earning well while helping others transform their lives." },
-    { name:"Neha Verma",    city:"Indore",    stars:5, img:"7.png", quote:"Within weeks of applying the remedies, our home felt calmer and my focus at work improved a lot." },
-    { name:"Sandeep Patil", city:"Nashik",    stars:5, img:"10.png", quote:"Simple guidance, powerful impact. I saw positive changes in business flow and family harmony." }
+    { name:"RICHA KHANDELWAL",    city:"FROM DELHI",    stars:5, img:"7.png", quote:"Wonderful Teaching by Wonderful Teacher" },
   ]
 };
 </script>
@@ -109,11 +109,14 @@ const LP = {
   --shadow:rgba(100,70,10,.12); --white:#fff; --red:#C0392B;
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{font-size:22px;scroll-behavior:smooth;}
+@media(max-width:768px){html{font-size:17px;}}
 body{background:var(--bg);color:var(--text);font-family:'Raleway',sans-serif;font-weight:400;overflow-x:hidden;}
 
 /* NAV */
 .lp-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,253,247,.97);border-bottom:1px solid var(--border);padding:.8rem 3rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 20px var(--shadow);}
+.brand-wrap{display:flex;align-items:center;gap:.7rem;}
+.brand-logo{width:42px;height:42px;object-fit:contain;display:block;}
 .lp-nav-brand{font-family:'Cinzel',serif;font-size:.9rem;font-weight:700;color:var(--gold);letter-spacing:.06em;}
 .btn-red{background:var(--red);color:#fff;padding:.9rem 2.4rem;font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;display:inline-block;font-weight:700;transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;}
 .btn-red:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(192,57,43,.4);}
@@ -268,6 +271,7 @@ section{padding:6rem 3rem;}
 /* FOOTER */
 .lp-footer{background:var(--dark);border-top:1px solid rgba(184,118,10,.15);padding:2.2rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;}
 .ft-brand{font-family:'Cinzel',serif;font-size:.85rem;color:var(--gold);letter-spacing:.1em;font-weight:700;}
+.ft-logo{width:54px;height:54px;object-fit:contain;display:block;margin-bottom:.45rem;}
 .ft-copy{font-size:.58rem;color:rgba(255,255,255,.3);margin-top:.3rem;}
 .ft-social{display:flex;gap:1.2rem;}
 .ft-social a{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);text-decoration:none;transition:color .3s;}
@@ -315,15 +319,18 @@ section{padding:6rem 3rem;}
 
 <!-- STICKY NAV -->
 <nav class="lp-nav">
-  <div class="lp-nav-brand" id="nav-brand"></div>
-  <a id="nav-cta" href="#" class="btn-red btn-sm">Join Now — FREE</a>
+  <div class="brand-wrap">
+    <img class="brand-logo" id="nav-logo" src="" alt="Brand Logo">
+    <div class="lp-nav-brand" id="nav-brand"></div>
+  </div>
+  <a id="nav-cta" href="#" class="btn-red btn-sm">Pay ₹9 & Join</a>
 </nav>
 
 <!-- ══════ HERO ══════ -->
 <section class="hero" id="top">
   <div class="hero-vastu-bg"></div>
   <div class="hero-left">
-    <div class="hero-badge">🌟 Free Webinar — Limited Seats Available</div>
+    <div class="hero-badge">🌟 ₹9 Webinar — Limited Seats Available</div>
     <h1 id="hero-h1"></h1>
     <p class="hero-sub" id="hero-sub"></p>
     <p class="hero-tagline" id="hero-tagline"></p>
@@ -362,7 +369,7 @@ section{padding:6rem 3rem;}
     <span class="cd-colon">:</span>
     <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><div class="cd-ul">Seconds</div></div>
   </div>
-  <div class="cd-cta"><a id="cd-btn" href="#" class="btn-red" style="font-size:.72rem;padding:1rem 2.5rem;">Reserve Your Free Seat →</a></div>
+  <div class="cd-cta"><a id="cd-btn" href="#" class="btn-red" style="font-size:.72rem;padding:1rem 2.5rem;">Pay ₹9 & Reserve Seat →</a></div>
 </div>
 
 <!-- ══════ AUDIENCE ══════ -->
@@ -375,7 +382,7 @@ section{padding:6rem 3rem;}
     </div>
     <div class="aud-grid" id="aud-grid"></div>
     <div class="tc reveal" style="margin-top:2.5rem;">
-      <a id="aud-cta" href="#" class="btn-red">👉 Enroll Now — It's FREE</a>
+      <a id="aud-cta" href="#" class="btn-red">👉 Enroll Now — Only ₹9</a>
     </div>
   </div>
 </section>
@@ -386,7 +393,7 @@ section{padding:6rem 3rem;}
     <div class="sh tc reveal">
       <span class="sec-tag">📚 Course Curriculum</span>
       <h2 class="sec-title">What You Will <em>Learn</em></h2>
-      <p class="sec-sub">8 powerful modules covering the complete science of Vastu, energy alignment &amp; ancient remedies — all in one free session.</p>
+      <p class="sec-sub">8 powerful modules covering the complete science of Vastu, energy alignment &amp; ancient remedies — all in one premium session.</p>
     </div>
     <div class="mod-grid" id="mod-grid"></div>
   </div>
@@ -418,7 +425,7 @@ section{padding:6rem 3rem;}
         <div class="highlight-box">
           <p>"Learn to <span class="hl">solve your own problems</span> &amp; earn from it — with the same knowledge that has transformed <span class="hl">5000+ lives</span>."</p>
         </div>
-        <div style="margin-top:2rem;"><a id="trainer-cta" href="#" class="btn-red">Join the Free Webinar →</a></div>
+        <div style="margin-top:2rem;"><a id="trainer-cta" href="#" class="btn-red">Join the ₹9 Webinar →</a></div>
       </div>
     </div>
   </div>
@@ -444,7 +451,7 @@ section{padding:6rem 3rem;}
         <h2 class="sec-title" style="color:#fff;">Everything You Need <em>to Know</em></h2>
         <ul class="detail-list" id="detail-list" style="margin-top:2rem;"></ul>
         <div class="bonus-box">
-          <span class="bt">🎁 Free Bonus</span>
+          <span class="bt">🎁 Bonus Included</span>
           <div class="bn" id="bonus-title"></div>
           <div class="bs">Exclusively for registered participants</div>
         </div>
@@ -482,9 +489,9 @@ section{padding:6rem 3rem;}
     <h2 class="u-title">One Webinar Can <em>Change Everything</em></h2>
     <p class="u-sub">"सिर्फ घर नहीं, आपकी पूरी जिंदगी बदल जाएगी – सही दिशा, सही ऊर्जा के साथ!"</p>
     <div class="u-points">
-      <div class="u-pt">100% Free to Attend</div>
+      <div class="u-pt">Only ₹9 to Attend</div>
       <div class="u-pt">Practical Techniques</div>
-      <div class="u-pt">Free Bonus Guide ₹999</div>
+      <div class="u-pt">Bonus Guide Included (Worth ₹999)</div>
       <div class="u-pt">Certificate Included</div>
     </div>
     <a id="urgency-btn" href="#" class="btn-red" style="font-size:.8rem;padding:1.3rem 4rem;"></a>
@@ -495,6 +502,7 @@ section{padding:6rem 3rem;}
 <!-- FOOTER -->
 <footer class="lp-footer">
   <div>
+    <img class="ft-logo" id="ft-logo" src="" alt="Brand Logo">
     <div class="ft-brand" id="ft-brand"></div>
     <div class="ft-copy" id="ft-copy"></div>
   </div>
@@ -504,7 +512,7 @@ section{padding:6rem 3rem;}
 
 <!-- Floating mobile CTA -->
 <div class="float-cta">
-  <a id="float-btn" href="#">🔥 Join Free Webinar — Reserve Seat Now</a>
+  <a id="float-btn" href="#">🔥 Pay ₹9 — Reserve Seat Now</a>
 </div>
 
 <script>
@@ -512,6 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const C = LP;
 
   // NAV
+  document.getElementById('nav-logo').src = C.logoImg;
   document.getElementById('nav-brand').textContent = C.siteName;
   document.getElementById('nav-cta').href = C.ctaURL;
 
@@ -598,6 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ub = document.getElementById('urgency-btn'); ub.textContent = C.ctaText; ub.href = C.ctaURL;
 
   // FOOTER
+  document.getElementById('ft-logo').src = C.logoImg;
   document.getElementById('ft-brand').textContent = C.siteName;
   document.getElementById('ft-copy').textContent = `© 2025 ${C.siteName}. All Rights Reserved. | ${C.website}`;
   document.getElementById('ft-social').innerHTML =
