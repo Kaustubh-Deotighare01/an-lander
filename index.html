@@ -186,10 +186,10 @@
     .btn-red {
       background: var(--red);
       color: #fff;
-      padding: .65rem 1.8rem !important; /* Smaller padding to compensate for larger text, keeping button roughly same size */
+      padding: .6rem 1.6rem !important; /* Adjusted padding */
       font-family: 'Cinzel', serif;
-      font-size: 1.05rem !important; /* Increased text size */
-      letter-spacing: .10em;
+      font-size: 1.4rem !important; /* Significantly increased text size */
+      letter-spacing: .08em;
       text-transform: uppercase;
       text-decoration: none;
       display: inline-block;
@@ -225,8 +225,8 @@
     }
 
     .btn-sm {
-      padding: .55rem 1.4rem !important;
-      font-size: .62rem !important;
+      padding: .6rem 1.4rem !important;
+      font-size: 1.05rem !important;
     }
 
     /* HERO */
@@ -563,6 +563,71 @@
 
     .tc .sec-sub {
       margin: 0 auto;
+    }
+
+    /* CAREER */
+    .sec-career {
+      background: linear-gradient(135deg, var(--bg3) 0%, var(--bg2) 100%);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .career-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      padding: 2.5rem 2rem;
+      transition: transform .3s, border-color .3s, box-shadow .3s;
+    }
+    .career-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+      box-shadow: 0 10px 28px var(--shadow);
+    }
+    .career-ic {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+      color: var(--gold);
+    }
+    .career-card h4 {
+      font-family: 'Cinzel', serif;
+      font-size: .85rem;
+      letter-spacing: .05em;
+      color: var(--dark);
+      margin-bottom: .8rem;
+    }
+    .career-card p {
+      font-size: .75rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .career-highlight {
+      background: var(--dark);
+      color: #fff;
+      padding: .6rem 1.5rem;
+      display: inline-block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.2;
+      border: 1px solid var(--gold);
+      margin-top: 1.5rem;
+      letter-spacing: .02em;
+    }
+    .career-highlight span {
+      color: var(--gold);
+      font-style: italic;
+    }
+    @media(max-width: 768px) {
+      .career-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* AUDIENCE */
@@ -1398,6 +1463,16 @@
       .hero h1 {
         font-size: 2.2rem;
       }
+
+      .btn-red {
+        font-size: 1.1rem !important;
+        padding: 0.6rem 1.4rem !important;
+      }
+
+      .btn-sm {
+        font-size: 0.85rem !important;
+        padding: 0.5rem 1.1rem !important;
+      }
     }
 
     @media(max-width:480px) {
@@ -1492,6 +1567,38 @@
     <div class="cd-cta"><a id="cd-btn" href="#" class="btn-red" style="font-size:.72rem;padding:1rem 2.5rem;">Join Now —
         Reserve Seat →</a></div>
   </div>
+
+  <!-- ══════ CAREER OPPORTUNITY ══════ -->
+  <section class="sec-career">
+    <div class="si">
+      <div class="sh tc reveal">
+        <span class="sec-tag">💼 Career & Business Opportunity</span>
+        <h2 class="sec-title">Build a Highly Profitable <em>Consulting Business</em></h2>
+        <p class="sec-sub">Vastu Shastra is not just a spiritual science—it's a high-demand, high-paying career. Turn your knowledge into a lucrative side hustle or full-time business.</p>
+        <div class="career-highlight">Earn up to <span>₹1 to ₹2 Lakhs</span> Monthly</div>
+      </div>
+      <div class="career-grid">
+        <div class="career-card reveal" style="transition-delay: .05s">
+          <span class="career-ic">💰</span>
+          <h4>High Income Potential</h4>
+          <p>Demand for skilled Vastu consultants is massive. Earn substantial consulting fees from homeowners and businesses directly from day one.</p>
+        </div>
+        <div class="career-card reveal" style="transition-delay: .15s">
+          <span class="career-ic">📈</span>
+          <h4>Zero Capital Start</h4>
+          <p>You don't need a heavy investment to start. Begin as a side income source alongside your current job with zero infrastructure required.</p>
+        </div>
+        <div class="career-card reveal" style="transition-delay: .25s">
+          <span class="career-ic">🤝</span>
+          <h4>Professional Freedom</h4>
+          <p>Be your own boss. Work flexible schedules, choose your clients, and achieve true financial independence and personal growth.</p>
+        </div>
+      </div>
+      <div class="tc reveal" style="margin-top: 2.5rem;">
+        <a id="career-btn" href="#" class="btn-red">Start Your Journey Now →</a>
+      </div>
+    </div>
+  </section>
 
   <!-- ══════ AUDIENCE ══════ -->
   <section class="sec-audience">
@@ -1712,6 +1819,10 @@
       // COUNTDOWN
       runCountdown(C.countdownTo);
       document.getElementById('cd-btn').href = C.ctaURL;
+
+      // CAREER
+      const cb = document.getElementById('career-btn'); 
+      if (cb) cb.href = C.ctaURL;
 
       // AUDIENCE
       document.getElementById('aud-grid').innerHTML = C.audience.map((a, i) =>
