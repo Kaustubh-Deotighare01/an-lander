@@ -41,7 +41,7 @@
 
       /* ── COUNTDOWN — set to your webinar datetime ── */
       countdownTo: "2026-05-01T21:00:00+05:30",
-      heroYoutubeEmbedURL: "https://www.youtube.com/watch?v=_J71F0J-3r8",
+      heroYoutubeEmbedURL: "https://youtube.com/shorts/pnH7Y6qRpak?si=DWh2kKwf0c-mL3A7&autoplay=1&mute=1",
 
       /* ── CTA BUTTONS ── */
       ctaText: "Join Now",
@@ -186,10 +186,10 @@
     .btn-red {
       background: var(--red);
       color: #fff;
-      padding: .9rem 2.4rem;
+      padding: .65rem 1.8rem !important; /* Smaller padding to compensate for larger text, keeping button roughly same size */
       font-family: 'Cinzel', serif;
-      font-size: .7rem;
-      letter-spacing: .15em;
+      font-size: 1.05rem !important; /* Increased text size */
+      letter-spacing: .10em;
       text-transform: uppercase;
       text-decoration: none;
       display: inline-block;
@@ -1455,7 +1455,7 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
-        <div class="free-ribbon">
+        <div class="free-ribbon" style="display: none;">
           <span class="fr-was" id="fr-was"></span>
           <span class="fr-now" id="fr-now"></span>
           <span class="fr-label">Today</span>
@@ -1659,6 +1659,8 @@
           videoId = u.searchParams.get('v') || '';
         } else if (u.pathname.startsWith('/embed/')) {
           videoId = u.pathname.split('/embed/')[1].split('/')[0];
+        } else if (u.pathname.startsWith('/shorts/')) {
+          videoId = u.pathname.split('/shorts/')[1].split('/')[0];
         }
         if (!videoId) return { embed: rawUrl, watch: rawUrl };
 
